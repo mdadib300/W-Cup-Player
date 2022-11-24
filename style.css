@@ -1,0 +1,259 @@
+/* Google-font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+/* body-styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 1440px;
+    margin: auto;
+}
+
+
+/* header-styles */
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.Top-banner {
+    background-color: rgb(22, 21, 21);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.info {
+    padding-left: 100px;
+}
+
+.text-banner {
+    color: aliceblue;
+    font-size: 45px;
+    margin-bottom: 16px;
+}
+
+#paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+#paragraph:hover {
+    transform: scale(1.05);
+    transition: all 0.4s linear;
+}
+
+.button {
+    text-decoration: none;
+    color: aliceblue;
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(83, 6, 6);
+}
+
+#banner {
+    width: 581px;
+    height: 613px;
+}
+
+
+/* main-styles */
+.menu-blogs {
+    display: flex;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+.menu-bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: rgb(22, 21, 21);
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    margin-right: 24px;
+}
+
+.menu-button {
+    text-decoration: none;
+    color: black;
+    background-color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+#selected-menu {
+    background-color: red;
+}
+
+.blog-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.blogs {
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    width: 312px;
+    height: 362px;
+
+}
+
+.text-info {
+    padding: 15px;
+}
+
+.transfer-button {
+    text-decoration: none;
+    border: 1px solid rgb(22, 21, 21);
+    border-radius: 5px;
+    color: black;
+    padding: 4px 16px;
+}
+
+.duration-comment {
+    color: gray;
+    display: flex;
+    column-gap: 30px;
+}
+
+.match {
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+}
+
+#view-all {
+    display: flex;
+    justify-content: center;
+}
+
+.view-all-button {
+    text-decoration: none;
+    color: black;
+    background-color: red;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 10px;
+    visibility: hidden;
+}
+
+
+/* footer-styles */
+.footer-section {
+    margin-top: 50px;
+    padding: 100px;
+    background-color: rgb(22, 21, 21);
+}
+
+footer h1 {
+    text-align: center;
+    color: aliceblue;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-around;
+    color: aliceblue;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.social {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+
+/* -----Media-query----- */
+/*---For-tabs---*/
+@media screen and (max-width:992px) and (min-width:688px) {
+    .menu-blogs {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .menu-bar {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color: white;
+        width: auto;
+        height: auto;
+        border-radius: auto;
+        margin-right: auto;
+    }
+
+    .menu-button {
+        border: 0.3px solid gray;
+        padding: 10px;
+        margin: 25px 45px;
+    }
+
+    .blog-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+    .view-all-button {
+        visibility: visible;
+    }
+}
+
+
+/*---For-mobile-phone---*/
+@media screen and (max-width:688px) {
+    .Top-banner {
+        background-color: rgb(22, 21, 21);
+        border-radius: 5px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .menu-blogs {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .menu-bar {
+        background-color: white;
+        width: auto;
+        height: auto;
+        border-radius: auto;
+        margin: 100px;
+    }
+
+    .menu-button {
+        border: 0.3px solid gray;
+        padding: 10px;
+    }
+
+    .blog-section {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .footer-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        color: aliceblue;
+    }
+}
